@@ -37,6 +37,12 @@
   }
 }
 
+.header-fixed {
+  .content {
+    margin-top: $header-height;
+  }
+}
+
 .sidebar-hidden {
   .content {
     margin-left: 0;

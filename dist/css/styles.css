@@ -9787,6 +9787,10 @@ a.text-dark:hover {
   }
 }
 
+.header-fixed .content {
+  margin-top: 60px;
+}
+
 .sidebar-hidden .content {
   margin-left: 0;
 }
