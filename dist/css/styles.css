@@ -10210,11 +10210,6 @@ a.text-dark:hover {
   padding: 1rem;
 }
 
-.card-block .tab-content {
-  margin-top: 0;
-  border: 0;
-}
-
 .navbar .navbar-brand {
   width: calc(240px - 1rem);
   margin-right: 0;
