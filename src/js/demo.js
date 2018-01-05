@@ -140,4 +140,51 @@ $(document).ready(function () {
             }
         });
     }
+
+    /**
+     * Widget Line Chart
+     */
+    var wLineChart = $('.widget-line-chart');
+
+    wLineChart.each(function (index, canvas) {
+        new Chart(canvas, {
+            type: 'line',
+            data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+                    label: 'Users',
+                    data: [12, 19, 3, 5, 2, 3, 20, 33, 23, 12, 33, 10],
+                    borderColor: '#fff',
+                    borderWidth: 1,
+                    fill: false,
+                }]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            display: false,
+                        },
+                        gridLines: {
+                            display: false,
+                            drawBorder: false,
+                        }
+                    }],
+                    xAxes: [{
+                        ticks: {
+                            display: false,
+                        },
+                        gridLines: {
+                            display: false,
+                            drawBorder: false,
+                        }
+                    }]
+                }
+            }
+        });
+    });
 });
